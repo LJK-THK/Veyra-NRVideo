@@ -1,42 +1,26 @@
-<p align="center"><img src="assets/veyra-wordmark-sun.gif" alt="Veyra animated wordmark and sun" width="480"></p>
+# Veyra 2.2.0 带鱼屏专用版 · Ultrawide Edition
 
-# Veyra
+这个社区版基于 [Likely7 的 Veyra 2.2.0](https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.2.0)，为带鱼屏播放 16:9 视频或显示采集画面时的左右留白添加背景。
 
-<p align="center">
-  <a href="https://x.com/likely2002">X · @likely2002</a> · <a href="https://www.youtube.com/@Likely7Ai">YouTube · @Likely7Ai</a><br>
-  <a href="https://www.youtube.com/watch?v=ZJ42jzNAbik">English tutorial</a> · <a href="https://www.bilibili.com/video/BV1KvsE6bEPw/">中文教程</a>
-</p>
+## 带鱼屏功能
 
-[简体中文](README_CN.md) · [Download Veyra 2.2.0](https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.2.0) · [Wiki](https://github.com/Likely7/Veyra-NRVideo/wiki) · [Report an issue](https://github.com/Likely7/Veyra-NRVideo/issues)
+| 选项 | 效果 |
+| --- | --- |
+| 黑色 | 两侧显示黑色。 |
+| 内置 | 从 4 张原创竖图中分别为左右选图。 |
+| 自定义 | 从电脑上独立选择左右图片，支持 PNG、JPEG 和 BMP。 |
+| 幻灯片（默认） | 每 20 秒随机更换左右两张竖图。 |
 
-Veyra is a Windows player and capture tool for real-time video enhancement. It brings local media, capture cards, screen capture, network streams and PS5, Xbox or PC streaming into a shared GPU pipeline.
+打开 **设置 → 外观 → 两侧背景**。可把背景亮度从默认的 **60%** 调到 **100%** 原图亮度。背景随实际左右留白显示，视频按所选比例呈现。
 
-- Enhance video with super resolution, experimental NR (DLSS 5), HDR and GPU frame generation. Available backends depend on your GPU.
-- Record, save instant replays, export enhanced media or send processed video to OBS through Veyra Virtual Camera.
-- Use the professional list or node view to adjust effects and inspect frame timing.
+## 2.2.0 使用方法
 
-## Latest update · 2.2.0
+公开补丁适用于官方 **NVIDIA Windows x64 2.2.0 常规便携版**。把补丁里 `copy-into-Veyra` 的内容复制到 `Veyra.exe` 所在目录，合并 `versions` 文件夹后运行 `Veyra.exe`。
 
-- Windows installers with a selectable location, optional desktop shortcut and uninstaller. Portable ZIPs remain available. Both include signed in-app update support.
-- Real-time subtitle translation with an optional local model, a processed virtual camera output, and improved fullscreen scaling.
-- Capture and audio stability fixes, screen-capture drag cropping, segmented recording, RTP/UDP multicast and live timeshift.
+[查看 Releases](https://github.com/LJK-THK/Veyra-NRVideo/releases) · [官方 2.2.0 基础包](https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.2.0)
 
-[Full 2.2.0 changes, test results and image comparisons](https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.2.0)
+## 源码与致谢
 
-## Get started
+本分支对应上游 2.2.0。带鱼屏功能最初通过 [PR #206](https://github.com/Likely7/Veyra-NRVideo/pull/206) 提交给原作者。感谢 **Likely7** 和 Veyra 社区贡献者。
 
-Use Windows 11 x64 with DirectX 12 and current GPU drivers. Choose the package for the GPU Veyra will use. Run the Setup EXE, or extract the portable ZIP to a writable folder and launch **Veyra.exe**. Use **First time? View the guide** on Home or open the capture format help in the capture-card dialog. [Downloads and upgrade instructions](https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.2.0)
-
-[Build instructions](docs/BUILD_2.2.0.md) · [Corresponding sources](https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.2.0-sources) · [Linux OBS filter](docs/OBS_FILTER.md) · [GPL-3.0](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
-
-## Community
-
-[Discord](https://discord.gg/qetVZTRkC) · [Patreon](https://www.patreon.com/cw/Likely7) · [Buy me a coffee](https://www.patreon.com/Likely7/posts/buy-me-coffee-175018110) · [Knowledge base](https://qcnv4i7tnd7l.feishu.cn/wiki/space/7688258025282358221?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Likely7/Veyra-NRVideo/v1.4.0/docs/images/1.4.0/donate-wechat.jpg" alt="WeChat donation / 微信赞助" width="220">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/images/community/group-15-20261119.png" alt="Veyra WeChat group 15 / 交流群 15" width="220">
-</p>
-
-WeChat support and group 15. The group QR is valid before November 26, 2026.
+[GPL-3.0](LICENSE) · [第三方声明](THIRD_PARTY_NOTICES.md) · [开发与构建文档](docs/DEVELOPMENT.md)
